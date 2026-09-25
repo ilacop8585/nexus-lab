@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NEXUS Lab — Small AI systems, built in public</title>
+  <meta name="description" content="NEXUS Lab is a small independent AI systems lab building agent orchestration, MCP services and automation with modest hardware and public, verifiable progress.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://lab.nexusword.it/">
+  <meta property="og:title" content="NEXUS Lab">
+  <meta property="og:description" content="Small AI systems. Real capabilities. Public progress.">
+  <meta property="og:url" content="https://lab.nexusword.it/">
+  <meta property="og:type" content="website">
+  <style>
+    :root{
+      --bg:#07090d;--panel:#0d1117;--panel2:#101722;--line:#1d2836;--text:#edf4ff;
+      --muted:#8da0b5;--accent:#71f5ba;--accent2:#75a7ff;--warn:#ffd27d;--red:#ff8f8f;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:
+      radial-gradient(circle at 18% 0%,rgba(113,245,186,.08),transparent 28rem),
+      radial-gradient(circle at 85% 8%,rgba(117,167,255,.07),transparent 26rem),
+      var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(calc(100% - 36px),var(--max));margin:auto}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.06)}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.08em}
+    .mark{width:30px;height:30px;border:1px solid var(--accent);border-radius:8px;display:grid;place-items:center;color:var(--accent);box-shadow:0 0 28px rgba(113,245,186,.12)}
+    .navlinks{display:flex;gap:22px;color:var(--muted);font-size:14px}
+    .navlinks a:hover{color:var(--text)}
+    header{padding:92px 0 54px}
+    .eyebrow{font:600 12px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--accent);letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(45px,8vw,96px);line-height:.94;letter-spacing:-.055em;margin:20px 0 26px;max-width:1000px}
+    .lead{font-size:clamp(18px,2vw,23px);line-height:1.55;color:#b9c8d9;max-width:820px}
+    .honesty{margin-top:24px;color:var(--muted);max-width:850px;line-height:1.7}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+    .btn{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);padding:12px 16px;border-radius:10px;font-weight:700;font-size:14px;background:#0b1017}
+    .btn.primary{background:var(--accent);color:#04100b;border-color:var(--accent)}
+    .btn:hover{transform:translateY(-1px)}
+    section{padding:48px 0}
+    .section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:22px}
+    h2{font-size:clamp(28px,4vw,44px);letter-spacing:-.035em;margin:0}
+    .section-head p{max-width:580px;color:var(--muted);line-height:1.6;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+    .card{border:1px solid var(--line);background:linear-gradient(180deg,rgba(16,23,34,.94),rgba(10,14,20,.94));border-radius:14px;padding:20px}
+    .metric{grid-column:span 3;min-height:136px}
+    .metric .n{font:700 42px/1 ui-monospace,SFMono-Regular,Consolas,monospace;margin:12px 0 10px}
+    .label{color:var(--muted);font-size:13px}
+    .status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px rgba(113,245,186,.5);margin-right:8px}
+    .architecture{grid-column:span 12;padding:28px}
+    .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:22px}
+    .node{border:1px solid var(--line);border-radius:12px;padding:18px;background:#090d13;min-height:110px}
+    .node b{display:block;margin-bottom:8px}
+    .node small{color:var(--muted);line-height:1.5}
+    .node::after{content:"→";float:right;color:var(--accent2)}
+    .node:last-child::after{content:""}
+    .agents{grid-column:span 8}
+    .side{grid-column:span 4}
+    .agent-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:18px}
+    .agent{border:1px solid #192331;border-radius:10px;padding:12px;background:#090d13}
+    .agent strong{display:block;font-size:14px}
+    .agent span{font:500 11px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--muted)}
+    .timeline{display:grid;gap:10px;margin-top:18px}
+    .event{display:grid;grid-template-columns:116px 1fr;gap:15px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+    .event:last-child{border-bottom:0}
+    .event time{font:500 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--muted)}
+    .event b{display:block;font-size:14px;margin-bottom:4px}
+    .event span{color:var(--muted);font-size:13px;line-height:1.5}
+    .tagrow{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+    .tag{border:1px solid #223246;border-radius:999px;padding:6px 9px;font:600 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#b9c8d9}
+    .machine{grid-column:span 6}
+    .work{grid-column:span 6}
+    .code{font:500 12px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;background:#05080c;border:1px solid #17202b;border-radius:10px;padding:14px;overflow:auto;color:#b7c7d8}
+    .truth{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .truth .card{min-height:210px}
+    .truth h3,.card h3{margin:0 0 12px;font-size:18px}
+    .muted{color:var(--muted);line-height:1.65}
+    .zero{color:var(--warn)}
+    footer{padding:50px 0 70px;border-top:1px solid rgba(255,255,255,.06);margin-top:36px}
+    footer .row{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+    .fine{color:#6f8092;font-size:12px;line-height:1.6;max-width:760px}
+    .livepill{display:inline-flex;align-items:center;border:1px solid #234033;border-radius:999px;padding:7px 10px;font:600 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--accent);margin-top:15px}
+    @media(max-width:860px){
+      .navlinks{display:none}.metric{grid-column:span 6}.flow{grid-template-columns:1fr}.node::after{content:"↓"}.agents,.side,.machine,.work{grid-column:span 12}.truth{grid-template-columns:1fr}.event{grid-template-columns:90px 1fr}
+    }
+    @media(max-width:520px){.metric{grid-column:span 12}header{padding-top:62px}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"NEXUS Lab",
+    "url":"https://lab.nexusword.it/",
+    "description":"Small independent AI systems lab building agent orchestration, MCP services and automation.",
+    "sameAs":["https://github.com/ilacop8585/nexus-agent-utilities"]
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="/"><span class="mark">N</span><span>NEXUS LAB</span></a>
+      <div class="navlinks">
+        <a href="#system">System</a><a href="#agents">Agents</a><a href="#activity">Activity</a><a href="#machine">For AI</a><a href="#work">Work with us</a>
+      </div>
+    </nav>
+
+    <header>
+      <div class="eyebrow">Independent AI systems lab · built in public</div>
+      <h1>Small team.<br>Real systems.<br>Public progress.</h1>
+      <div class="lead">NEXUS is a small independent AI project exploring how far careful orchestration, local models, agent routing and machine-readable services can go on modest hardware.</div>
+      <div class="honesty">We are not a large AI company and we do not pretend to be one. We publish what actually works, what is still experimental, and what has not earned a cent yet. If you trust us with a small real task, you help us test the system under real conditions and grow responsibly.</div>
+      <div class="actions">
+        <a class="btn primary" href="#work">Give NEXUS a small task →</a>
+        <a class="btn" href="https://x402.nexusword.it/catalog">Agent utilities</a>
+        <a class="btn" href="https://github.com/ilacop8585/nexus-agent-utilities">Public GitHub</a>
+      </div>
+      <div class="livepill"><span class="status-dot"></span><span id="snapshotLabel">Loading verified snapshot…</span></div>
+    </header>
+
+    <section id="system">
+      <div class="section-head"><h2>What exists today</h2><p>Numbers come from a sanitized public snapshot generated from the NEXUS runtime. No customer content, prompts, credentials, internal paths or private identifiers are published.</p></div>
+      <div class="grid">
+        <div class="card metric"><div class="label">Virtual agent roles</div><div class="n" id="agentsCount">—</div><div class="label">shared model pool</div></div>
+        <div class="card metric"><div class="label">Registered AI engines</div><div class="n" id="enginesCount">—</div><div class="label">local + existing entitlements</div></div>
+        <div class="card metric"><div class="label">Infrastructure workers</div><div class="n" id="workersCount">—</div><div class="label">routing, control, automation</div></div>
+        <div class="card metric"><div class="label">Verified revenue</div><div class="n zero" id="revenueCount">€0</div><div class="label">we count only verified money</div></div>
+        <div class="card architecture">
+          <div class="label">NEXUS Agent Fabric</div>
+          <div class="flow">
+            <div class="node"><b>1 · Intake</b><small>One request enters NEXUS.</small></div>
+            <div class="node"><b>2 · Route</b><small>A virtual specialist is selected.</small></div>
+            <div class="node"><b>3 · Execute</b><small>The best available engine handles the task.</small></div>
+            <div class="node"><b>4 · QA / Repair</b><small>A reviewer can reject and repair weak output.</small></div>
+            <div class="node"><b>5 · Result</b><small>One final answer, with receipts and cost controls.</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="agents">
+      <div class="section-head"><h2>Agent departments</h2><p>An “agent” here is a role with tools, routing rules and quality checks. We do not claim one separate foundation model for every card.</p></div>
+      <div class="grid">
+        <div class="card agents">
+          <h3>Virtual specialists</h3>
+          <div class="agent-grid" id="agentGrid"></div>
+        </div>
+        <div class="card side">
+          <h3>Design rule</h3>
+          <p class="muted">We prefer orchestration over brute force. Multiple roles can share the same underlying model. This keeps RAM, GPU usage and cost under control while allowing specialization at the workflow layer.</p>
+          <div class="tagrow">
+            <span class="tag">local-first</span><span class="tag">€0 auto-spend</span><span class="tag">QA</span><span class="tag">MCP</span><span class="tag">x402</span><span class="tag">receipts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="activity">
+      <div class="section-head"><h2>Verified public activity</h2><p>This is intentionally not a fake “busy terminal.” Entries are published only when they correspond to a real system event safe to disclose.</p></div>
+      <div class="card">
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <section id="machine">
+      <div class="section-head"><h2>Readable by humans and agents</h2><p>The site has a human interface and a machine-readable surface so other AI systems can understand what NEXUS offers without scraping marketing copy.</p></div>
+      <div class="grid">
+        <div class="card machine">
+          <h3>Machine-readable catalog</h3>
+          <div class="code">/agents.json<br>/capabilities.json<br>/data/public-status.json<br>/llms.txt<br>/robots.txt<br>/sitemap.xml<br><br>External service interfaces:<br>https://x402.nexusword.it/openapi.json<br>https://x402.nexusword.it/mcp<br>https://x402.nexusword.it/catalog</div>
+        </div>
+        <div class="card work" id="work">
+          <h3>Give us a small real job</h3>
+          <p class="muted">We want work we can actually finish. Start small: data cleanup, code review, extraction, micro-automation, local-AI/PC review or an AI workflow audit. Every accepted task is a real test of the pipeline.</p>
+          <div class="actions">
+            <a class="btn primary" href="mailto:nexus-revenue@agentmail.to?subject=NEXUS%20job%20request">Send a job request</a>
+            <a class="btn" href="https://book.stripe.com/14A3cv3n169e9Ng5w4dby02">€9.90 AI/PC Quick Audit</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="truth">
+        <div class="card">
+          <h3>What we will not fake</h3>
+          <p class="muted">No invented customers. No fake testimonials. No inflated headcount. No “enterprise-grade” label without evidence. No revenue counted before a provider confirms it. If something is experimental, we call it experimental.</p>
+        </div>
+        <div class="card">
+          <h3>Support the lab</h3>
+          <p class="muted">A support/donation channel is planned, including crypto only if it can be handled transparently and accounted for correctly. We will publish it only after the accounting and tax handling is clear.</p>
+          <span class="btn" aria-disabled="true">Support channel · coming later</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div>
+          <div class="brand"><span class="mark">N</span><span>NEXUS LAB</span></div>
+          <p class="fine">A small independent AI systems project. Public technical data is deliberately minimized and sanitized. Internal infrastructure remains private.</p>
+        </div>
+        <div class="fine">lab.nexusword.it<br>nexus-revenue@agentmail.to</div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const fallbackAgents=[
+      ["Code Engineer","Engineering"],["Debugger","Engineering"],["QA Engineer","Quality"],
+      ["Data Engineer","Data"],["JSON Specialist","Data"],["Research Analyst","Research"],
+      ["SEO & Agent Discovery","Growth"],["Sales Agent","Revenue"],["Lead Qualifier","Revenue"],
+      ["Revenue Analyst","Revenue"],["Content Agent","Growth"],["Translator","Languages"],
+      ["Vision Analyst","Vision"],["OCR Agent","Vision"],["Math Analyst","Analysis"],
+      ["RAG Librarian","Knowledge"],["Tool Router","Operations"],["Operations Agent","Operations"],
+      ["Security Reviewer","Security"],["Web Automation Agent","Automation"],
+      ["MCP Integration Agent","Automation"],["Customer Support Agent","Support"],
+      ["Release Manager","Engineering"],["NEXUS CEO Router","Executive"]
+    ];
+    function renderAgents(list){
+      document.getElementById("agentGrid").innerHTML=list.map(a=>{
+        const name=a.name||a[0], dept=a.department||a[1];
+        return '<div class="agent"><strong>'+name+'</strong><span>'+dept+'</span></div>';
+      }).join("");
+    }
+    renderAgents(fallbackAgents);
+    fetch("/data/public-status.json",{cache:"no-store"}).then(r=>r.json()).then(s=>{
+      document.getElementById("agentsCount").textContent=s.system.virtual_agents;
+      document.getElementById("enginesCount").textContent=s.system.registered_ai_engines;
+      document.getElementById("workersCount").textContent=s.system.infrastructure_workers;
+      document.getElementById("revenueCount").textContent="€"+Number(s.business.verified_revenue_eur||0).toFixed(2);
+      document.getElementById("snapshotLabel").textContent="Verified snapshot · "+s.snapshot_at;
+      if(s.agents) renderAgents(s.agents);
+      const tl=document.getElementById("timeline");
+      tl.innerHTML=(s.public_activity||[]).map(e=>'<div class="event"><time>'+e.time+'</time><div><b>'+e.title+'</b><span>'+e.detail+'</span></div></div>').join("");
+    }).catch(()=>{
+      document.getElementById("snapshotLabel").textContent="Public snapshot temporarily unavailable";
+      document.getElementById("timeline").innerHTML='<div class="event"><time>status</time><div><b>No live snapshot loaded</b><span>The site will never invent activity when telemetry is unavailable.</span></div></div>';
+    });
+  </script>
+</body>
+</html>

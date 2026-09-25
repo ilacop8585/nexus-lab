@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "snapshot_at": "2026-09-25 18:33 Europe/Rome",
+  "system": {
+    "virtual_agents": 24,
+    "registered_ai_engines": 18,
+    "infrastructure_workers": 13,
+    "automatic_new_spend_eur": 0,
+    "local_first": true
+  },
+  "business": {
+    "verified_revenue_eur": 0,
+    "paid_jobs": 0,
+    "accepted_jobs": 0,
+    "proposals_sent": 0,
+    "drafts_ready": 10
+  },
+  "discovery": {
+    "official_mcp_registry": "active",
+    "github_public": true,
+    "agenstry_indexed": true,
+    "mcp_directory": "under_review",
+    "glama": "under_review"
+  },
+  "agents": [
+    {
+      "name": "NEXUS CEO Router",
+      "department": "Executive"
+    },
+    {
+      "name": "Code Engineer",
+      "department": "Engineering"
+    },
+    {
+      "name": "Debugger",
+      "department": "Engineering"
+    },
+    {
+      "name": "QA Engineer",
+      "department": "Quality"
+    },
+    {
+      "name": "Data Engineer",
+      "department": "Data"
+    },
+    {
+      "name": "JSON Specialist",
+      "department": "Data"
+    },
+    {
+      "name": "Research Analyst",
+      "department": "Research"
+    },
+    {
+      "name": "SEO & Agent Discovery",
+      "department": "Growth"
+    },
+    {
+      "name": "Sales Agent",
+      "department": "Revenue"
+    },
+    {
+      "name": "Lead Qualifier",
+      "department": "Revenue"
+    },
+    {
+      "name": "Revenue Analyst",
+      "department": "Revenue"
+    },
+    {
+      "name": "Content Agent",
+      "department": "Growth"
+    },
+    {
+      "name": "Translator",
+      "department": "Languages"
+    },
+    {
+      "name": "Vision Analyst",
+      "department": "Vision"
+    },
+    {
+      "name": "OCR Agent",
+      "department": "Vision"
+    },
+    {
+      "name": "Math Analyst",
+      "department": "Analysis"
+    },
+    {
+      "name": "RAG Librarian",
+      "department": "Knowledge"
+    },
+    {
+      "name": "Tool Router",
+      "department": "Operations"
+    },
+    {
+      "name": "Operations Agent",
+      "department": "Operations"
+    },
+    {
+      "name": "Security Reviewer",
+      "department": "Security"
+    },
+    {
+      "name": "Web Automation Agent",
+      "department": "Automation"
+    },
+    {
+      "name": "MCP Integration Agent",
+      "department": "Automation"
+    },
+    {
+      "name": "Customer Support Agent",
+      "department": "Support"
+    },
+    {
+      "name": "Release Manager",
+      "department": "Engineering"
+    }
+  ],
+  "public_activity": [
+    {
+      "time": "2026-09-25",
+      "title": "NEXUS Agent Fabric verified",
+      "detail": "Single-entry routing across 24 virtual roles completed an end-to-end local test."
+    },
+    {
+      "time": "2026-09-25",
+      "title": "MCP Registry publication active",
+      "detail": "NEXUS Agent Utilities version 1.0.0 verified active in the official MCP Registry."
+    },
+    {
+      "time": "2026-09-25",
+      "title": "Glama submission accepted",
+      "detail": "Hosted MCP connector submitted and confirmed as pending review."
+    },
+    {
+      "time": "2026-09-25",
+      "title": "MCP.Directory submission accepted",
+      "detail": "Public server listing submitted for review."
+    },
+    {
+      "time": "2026-09-25",
+      "title": "Public GitHub discovery repository published",
+      "detail": "Machine-readable MCP/x402 discovery metadata is available publicly."
+    }
+  ]
+}

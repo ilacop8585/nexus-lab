@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "name": "NEXUS Agent Fabric",
+  "description": "Virtual specialist roles sharing an underlying pool of AI engines and tools.",
+  "endpoint": "https://lab.nexusword.it/",
+  "agents": [
+    {
+      "name": "NEXUS CEO Router",
+      "department": "Executive"
+    },
+    {
+      "name": "Code Engineer",
+      "department": "Engineering"
+    },
+    {
+      "name": "Debugger",
+      "department": "Engineering"
+    },
+    {
+      "name": "QA Engineer",
+      "department": "Quality"
+    },
+    {
+      "name": "Data Engineer",
+      "department": "Data"
+    },
+    {
+      "name": "JSON Specialist",
+      "department": "Data"
+    },
+    {
+      "name": "Research Analyst",
+      "department": "Research"
+    },
+    {
+      "name": "SEO & Agent Discovery",
+      "department": "Growth"
+    },
+    {
+      "name": "Sales Agent",
+      "department": "Revenue"
+    },
+    {
+      "name": "Lead Qualifier",
+      "department": "Revenue"
+    },
+    {
+      "name": "Revenue Analyst",
+      "department": "Revenue"
+    },
+    {
+      "name": "Content Agent",
+      "department": "Growth"
+    },
+    {
+      "name": "Translator",
+      "department": "Languages"
+    },
+    {
+      "name": "Vision Analyst",
+      "department": "Vision"
+    },
+    {
+      "name": "OCR Agent",
+      "department": "Vision"
+    },
+    {
+      "name": "Math Analyst",
+      "department": "Analysis"
+    },
+    {
+      "name": "RAG Librarian",
+      "department": "Knowledge"
+    },
+    {
+      "name": "Tool Router",
+      "department": "Operations"
+    },
+    {
+      "name": "Operations Agent",
+      "department": "Operations"
+    },
+    {
+      "name": "Security Reviewer",
+      "department": "Security"
+    },
+    {
+      "name": "Web Automation Agent",
+      "department": "Automation"
+    },
+    {
+      "name": "MCP Integration Agent",
+      "department": "Automation"
+    },
+    {
+      "name": "Customer Support Agent",
+      "department": "Support"
+    },
+    {
+      "name": "Release Manager",
+      "department": "Engineering"
+    }
+  ]
+}

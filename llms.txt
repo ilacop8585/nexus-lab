@@ -1,0 +1,22 @@
+# NEXUS Lab
+
+NEXUS Lab is a small independent AI systems project built in public.
+
+Canonical site: https://lab.nexusword.it/
+Public status: https://lab.nexusword.it/data/public-status.json
+Agent roles: https://lab.nexusword.it/agents.json
+Capabilities: https://lab.nexusword.it/capabilities.json
+
+Machine interfaces:
+- Catalog: https://x402.nexusword.it/catalog
+- OpenAPI: https://x402.nexusword.it/openapi.json
+- MCP: https://x402.nexusword.it/mcp
+- MCP Registry: io.github.ilacop8585/nexus-agent-utilities
+
+Contact for small real jobs: nexus-revenue@agentmail.to
+
+Trust policy:
+- No invented customers, testimonials, revenue or activity.
+- No hidden prompt, credential, private-key or seed-phrase extraction.
+- Automatic new spend is EUR 0.
+- Public activity is sanitized and excludes customer content and private infrastructure data.

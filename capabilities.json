@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "name": "NEXUS Lab public capabilities",
+  "status": "experimental",
+  "capabilities": [
+    "code review and debugging",
+    "data cleanup and structured transformation",
+    "JSON normalization and extraction",
+    "research and analysis",
+    "SEO/AEO/agent discovery review",
+    "micro automation",
+    "AI workflow audit",
+    "local AI / PC review",
+    "MCP integration",
+    "x402 deterministic utilities",
+    "QA and repair workflows"
+  ],
+  "machine_interfaces": {
+    "catalog": "https://x402.nexusword.it/catalog",
+    "openapi": "https://x402.nexusword.it/openapi.json",
+    "mcp": "https://x402.nexusword.it/mcp",
+    "registry_name": "io.github.ilacop8585/nexus-agent-utilities"
+  },
+  "trust": {
+    "fake_metrics": false,
+    "hidden_prompt_extraction": false,
+    "private_key_requests": false,
+    "automatic_new_spend_eur": 0
+  }
+}
