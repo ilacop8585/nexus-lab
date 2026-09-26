@@ -1,10 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "name": "NEXUS Lab public offers",
   "canonical": "https://lab.nexusword.it/shop.html",
   "job_request": {
     "email": "nexus-revenue@agentmail.to",
-    "human_url": "https://lab.nexusword.it/#work"
+    "human_url": "https://lab.nexusword.it/#work",
+    "nexus_ai_intake": "https://nexusword.it/"
   },
   "offers": [
     {
@@ -14,6 +15,36 @@
       "price_eur": 9.9,
       "purchase_url": "https://book.stripe.com/14A3cv3n169e9Ng5w4dby02",
       "service_url": "https://lab.nexusword.it/services/local-ai-pc-audit.html"
+    },
+    {
+      "id": "document-review",
+      "name": "Document Review & Structured Summary",
+      "status": "available_via_nexus_ai",
+      "price_eur": null,
+      "pricing": "scope_first",
+      "live_capability": "document",
+      "intake_url": "https://nexusword.it/",
+      "notes": "Secure file intake and queued processing are live. Pricing is confirmed only after scope/cost checks."
+    },
+    {
+      "id": "code-review-bug-triage",
+      "name": "Code Review & Bug Triage",
+      "status": "available_via_nexus_ai",
+      "price_eur": null,
+      "pricing": "scope_first",
+      "live_capability": "code",
+      "intake_url": "https://nexusword.it/",
+      "notes": "Source files and supported archives can enter the NEXUS job queue. No unverified execution claims."
+    },
+    {
+      "id": "data-json-cleanup",
+      "name": "Data & JSON Cleanup",
+      "status": "available_via_nexus_ai",
+      "price_eur": null,
+      "pricing": "scope_first",
+      "live_capability": "general-file",
+      "intake_url": "https://nexusword.it/",
+      "notes": "Bounded cleanup, normalization, extraction and structured transformation."
     },
     {
       "id": "ai-automation",
@@ -31,6 +62,12 @@
       "service_url": "https://lab.nexusword.it/services/mcp-integration.html",
       "contact_email": "nexus-revenue@agentmail.to"
     }
+  ],
+  "pending_capabilities": [
+    "image editing worker",
+    "video worker",
+    "audio worker",
+    "public OCR / vision worker"
   ],
   "product_links": {
     "nexus_ai": "https://nexusword.it/",
