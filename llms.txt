@@ -7,11 +7,29 @@ Public status: https://lab.nexusword.it/data/public-status.json
 Agent roles: https://lab.nexusword.it/agents.json
 Capabilities: https://lab.nexusword.it/capabilities.json
 
+Public languages:
+- English: https://lab.nexusword.it/
+- Italian: https://lab.nexusword.it/it/
+- Korean: https://lab.nexusword.it/ko/
+- Spanish: https://lab.nexusword.it/es/
+- French: https://lab.nexusword.it/fr/
+- German: https://lab.nexusword.it/de/
+
+Public services:
+- AI automation
+- MCP integration and agent orchestration
+- Local AI / PC Quick Audit (€9.90)
+
 Machine interfaces:
 - Catalog: https://x402.nexusword.it/catalog
 - OpenAPI: https://x402.nexusword.it/openapi.json
 - MCP: https://x402.nexusword.it/mcp
 - MCP Registry: io.github.ilacop8585/nexus-agent-utilities
+
+Website assistant:
+- The NEXUS public assistant answers only from curated public information.
+- It has no access to private infrastructure, terminals, credentials, private prompts or customer files.
+- Visitor questions are not stored by the static website; a visitor may explicitly open an email request with their question prefilled.
 
 Contact for small real jobs: nexus-revenue@agentmail.to
 
