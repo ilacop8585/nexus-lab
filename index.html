@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>NEXUS Lab — Small AI systems, built in public</title>
-  <meta name="description" content="NEXUS Lab is a small independent AI systems lab building agent orchestration, MCP services and automation with modest hardware and public, verifiable progress.">
+  <title>AI Automation, Agent Orchestration &amp; MCP Services | NEXUS Lab</title>
+  <meta name="description" content="NEXUS Lab builds practical AI automation, agent orchestration and MCP integrations for small real workflows, with public progress and cost controls.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://lab.nexusword.it/">
-  <meta property="og:title" content="NEXUS Lab">
-  <meta property="og:description" content="Small AI systems. Real capabilities. Public progress.">
+  <meta property="og:title" content="NEXUS Lab — AI Automation, Agent Orchestration &amp; MCP Services">
+  <meta property="og:description" content="Practical AI automation, agent orchestration and MCP integrations for small real workflows.">
   <meta property="og:url" content="https://lab.nexusword.it/">
   <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
   <style>
     :root{
       --bg:#07090d;--panel:#0d1117;--panel2:#101722;--line:#1d2836;--text:#edf4ff;
@@ -72,6 +73,7 @@
     .tag{border:1px solid #223246;border-radius:999px;padding:6px 9px;font:600 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#b9c8d9}
     .machine{grid-column:span 6}
     .work{grid-column:span 6}
+    .service-card{grid-column:span 4}
     .code{font:500 12px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;background:#05080c;border:1px solid #17202b;border-radius:10px;padding:14px;overflow:auto;color:#b7c7d8}
     .truth{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     .truth .card{min-height:210px}
@@ -83,7 +85,7 @@
     .fine{color:#6f8092;font-size:12px;line-height:1.6;max-width:760px}
     .livepill{display:inline-flex;align-items:center;border:1px solid #234033;border-radius:999px;padding:7px 10px;font:600 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--accent);margin-top:15px}
     @media(max-width:860px){
-      .navlinks{display:none}.metric{grid-column:span 6}.flow{grid-template-columns:1fr}.node::after{content:"↓"}.agents,.side,.machine,.work{grid-column:span 12}.truth{grid-template-columns:1fr}.event{grid-template-columns:90px 1fr}
+      .navlinks{display:none}.metric{grid-column:span 6}.flow{grid-template-columns:1fr}.node::after{content:"↓"}.agents,.side,.machine,.work,.service-card{grid-column:span 12}.truth{grid-template-columns:1fr}.event{grid-template-columns:90px 1fr}
     }
     @media(max-width:520px){.metric{grid-column:span 12}header{padding-top:62px}}
   </style>
@@ -94,7 +96,7 @@
     "name":"NEXUS Lab",
     "url":"https://lab.nexusword.it/",
     "description":"Small independent AI systems lab building agent orchestration, MCP services and automation.",
-    "sameAs":["https://github.com/ilacop8585/nexus-agent-utilities"]
+    "sameAs":["https://github.com/ilacop8585/nexus-lab","https://github.com/ilacop8585/nexus-agent-utilities"]
   }
   </script>
 </head>
@@ -103,7 +105,7 @@
     <nav>
       <a class="brand" href="/"><span class="mark">N</span><span>NEXUS LAB</span></a>
       <div class="navlinks">
-        <a href="#system">System</a><a href="#agents">Agents</a><a href="#activity">Activity</a><a href="#machine">For AI</a><a href="#work">Work with us</a>
+        <a href="#system">System</a><a href="#services">Services</a><a href="#agents">Agents</a><a href="#activity">Activity</a><a href="#machine">For AI</a><a href="#work">Work with us</a>
       </div>
     </nav>
 
@@ -137,6 +139,15 @@
             <div class="node"><b>5 · Result</b><small>One final answer, with receipts and cost controls.</small></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-head"><h2>Small services we can actually deliver</h2><p>Search engines need concrete pages, and customers need concrete offers. These are intentionally narrow starting points rather than vague “we do everything with AI” claims.</p></div>
+      <div class="grid">
+        <a class="card service-card" href="/services/ai-automation.html"><h3>AI automation</h3><p class="muted">Small repeatable workflows, extraction, data cleanup, routing and human-reviewed automation.</p><span class="tag">Explore service →</span></a>
+        <a class="card service-card" href="/services/mcp-integration.html"><h3>MCP &amp; agent orchestration</h3><p class="muted">Connect tools and AI roles with bounded permissions, routing, QA and observable execution.</p><span class="tag">Explore service →</span></a>
+        <a class="card service-card" href="/services/local-ai-pc-audit.html"><h3>Local AI / PC audit</h3><p class="muted">A practical €9.90 review of hardware, local models, tooling and bottlenecks.</p><span class="tag">Explore service →</span></a>
       </div>
     </section>
 
