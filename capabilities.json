@@ -26,5 +26,11 @@
     "hidden_prompt_extraction": false,
     "private_key_requests": false,
     "automatic_new_spend_eur": 0
+  },
+  "commerce": {
+    "shop": "https://lab.nexusword.it/shop.html",
+    "offers": "https://lab.nexusword.it/offers.json",
+    "job_request_email": "nexus-revenue@agentmail.to",
+    "nexus_ai": "https://nexusword.it/"
   }
 }
