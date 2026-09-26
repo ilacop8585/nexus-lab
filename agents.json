@@ -1,104 +1,153 @@
 {
-    "schema_version":  "1.0",
-    "name":  "NEXUS Agent Fabric",
-    "description":  "Virtual specialist roles sharing an underlying pool of AI engines and tools.",
-    "endpoint":  "https://lab.nexusword.it/",
-    "agents":  [
-                   {
-                       "name":  "NEXUS CEO Router",
-                       "department":  "Executive"
-                   },
-                   {
-                       "name":  "Code Engineer",
-                       "department":  "Engineering"
-                   },
-                   {
-                       "name":  "Debugger",
-                       "department":  "Engineering"
-                   },
-                   {
-                       "name":  "QA Engineer",
-                       "department":  "Quality"
-                   },
-                   {
-                       "name":  "Data Engineer",
-                       "department":  "Data"
-                   },
-                   {
-                       "name":  "JSON Specialist",
-                       "department":  "Data"
-                   },
-                   {
-                       "name":  "Research Analyst",
-                       "department":  "Research"
-                   },
-                   {
-                       "name":  "SEO \u0026 Agent Discovery",
-                       "department":  "Growth"
-                   },
-                   {
-                       "name":  "Sales Agent",
-                       "department":  "Revenue"
-                   },
-                   {
-                       "name":  "Lead Qualifier",
-                       "department":  "Revenue"
-                   },
-                   {
-                       "name":  "Revenue Analyst",
-                       "department":  "Revenue"
-                   },
-                   {
-                       "name":  "Content Agent",
-                       "department":  "Growth"
-                   },
-                   {
-                       "name":  "Translator",
-                       "department":  "Languages"
-                   },
-                   {
-                       "name":  "Vision Analyst",
-                       "department":  "Vision"
-                   },
-                   {
-                       "name":  "OCR Agent",
-                       "department":  "Vision"
-                   },
-                   {
-                       "name":  "Math Analyst",
-                       "department":  "Analysis"
-                   },
-                   {
-                       "name":  "RAG Librarian",
-                       "department":  "Knowledge"
-                   },
-                   {
-                       "name":  "Tool Router",
-                       "department":  "Operations"
-                   },
-                   {
-                       "name":  "Operations Agent",
-                       "department":  "Operations"
-                   },
-                   {
-                       "name":  "Security Reviewer",
-                       "department":  "Security"
-                   },
-                   {
-                       "name":  "Web Automation Agent",
-                       "department":  "Automation"
-                   },
-                   {
-                       "name":  "MCP Integration Agent",
-                       "department":  "Automation"
-                   },
-                   {
-                       "name":  "Customer Support Agent",
-                       "department":  "Support"
-                   },
-                   {
-                       "name":  "Release Manager",
-                       "department":  "Engineering"
-                   }
-               ]
+  "schema_version": "1.1",
+  "name": "NEXUS Agent Fabric",
+  "description": "Virtual specialist roles sharing an underlying pool of AI engines and tools. A role name does not imply a dedicated model or public runtime.",
+  "endpoint": "https://lab.nexusword.it/",
+  "agents": [
+    {
+      "name": "NEXUS CEO Router",
+      "department": "Executive",
+      "role_type": "virtual_specialist",
+      "public_availability": "public_live"
+    },
+    {
+      "name": "Code Engineer",
+      "department": "Engineering",
+      "role_type": "virtual_specialist",
+      "public_availability": "public_live"
+    },
+    {
+      "name": "Debugger",
+      "department": "Engineering",
+      "role_type": "virtual_specialist",
+      "public_availability": "public_live"
+    },
+    {
+      "name": "QA Engineer",
+      "department": "Quality",
+      "role_type": "virtual_specialist",
+      "public_availability": "public_live"
+    },
+    {
+      "name": "Data Engineer",
+      "department": "Data",
+      "role_type": "virtual_specialist",
+      "public_availability": "public_live"
+    },
+    {
+      "name": "JSON Specialist",
+      "department": "Data",
+      "role_type": "virtual_specialist",
+      "public_availability": "public_live"
+    },
+    {
+      "name": "Research Analyst",
+      "department": "Research",
+      "role_type": "virtual_specialist",
+      "public_availability": "public_live"
+    },
+    {
+      "name": "SEO & Agent Discovery",
+      "department": "Growth",
+      "role_type": "virtual_specialist",
+      "public_availability": "internal_or_scoped"
+    },
+    {
+      "name": "Sales Agent",
+      "department": "Revenue",
+      "role_type": "virtual_specialist",
+      "public_availability": "internal_or_scoped"
+    },
+    {
+      "name": "Lead Qualifier",
+      "department": "Revenue",
+      "role_type": "virtual_specialist",
+      "public_availability": "internal_or_scoped"
+    },
+    {
+      "name": "Revenue Analyst",
+      "department": "Revenue",
+      "role_type": "virtual_specialist",
+      "public_availability": "internal_or_scoped"
+    },
+    {
+      "name": "Content Agent",
+      "department": "Growth",
+      "role_type": "virtual_specialist",
+      "public_availability": "internal_or_scoped"
+    },
+    {
+      "name": "Translator",
+      "department": "Languages",
+      "role_type": "virtual_specialist",
+      "public_availability": "internal_or_scoped"
+    },
+    {
+      "name": "Vision Analyst",
+      "department": "Vision",
+      "role_type": "virtual_specialist",
+      "public_availability": "pending"
+    },
+    {
+      "name": "OCR Agent",
+      "department": "Vision",
+      "role_type": "virtual_specialist",
+      "public_availability": "pending"
+    },
+    {
+      "name": "Math Analyst",
+      "department": "Analysis",
+      "role_type": "virtual_specialist",
+      "public_availability": "public_live"
+    },
+    {
+      "name": "RAG Librarian",
+      "department": "Knowledge",
+      "role_type": "virtual_specialist",
+      "public_availability": "internal_or_scoped"
+    },
+    {
+      "name": "Tool Router",
+      "department": "Operations",
+      "role_type": "virtual_specialist",
+      "public_availability": "public_live"
+    },
+    {
+      "name": "Operations Agent",
+      "department": "Operations",
+      "role_type": "virtual_specialist",
+      "public_availability": "public_live"
+    },
+    {
+      "name": "Security Reviewer",
+      "department": "Security",
+      "role_type": "virtual_specialist",
+      "public_availability": "internal_or_scoped"
+    },
+    {
+      "name": "Web Automation Agent",
+      "department": "Automation",
+      "role_type": "virtual_specialist",
+      "public_availability": "internal_or_scoped"
+    },
+    {
+      "name": "MCP Integration Agent",
+      "department": "Automation",
+      "role_type": "virtual_specialist",
+      "public_availability": "internal_or_scoped"
+    },
+    {
+      "name": "Customer Support Agent",
+      "department": "Support",
+      "role_type": "virtual_specialist",
+      "public_availability": "public_live"
+    },
+    {
+      "name": "Release Manager",
+      "department": "Engineering",
+      "role_type": "virtual_specialist",
+      "public_availability": "internal_or_scoped"
+    }
+  ],
+  "availability_note": "public_live means the role can currently be routed through verified NEXUS chat/job capabilities; internal_or_scoped means internal or scoped work; pending means the public execution path is not yet live."
 }
