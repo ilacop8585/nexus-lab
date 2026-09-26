@@ -1,11 +1,31 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "name": "NEXUS Lab public capabilities",
-  "status": "experimental",
-  "capabilities": [
+  "status": "public_beta",
+  "live_public_runtime": {
+    "endpoint": "https://nexusword.it/",
+    "capabilities": [
+      "ai-chat",
+      "document",
+      "code",
+      "archive",
+      "general-file",
+      "cloudflare-fallback",
+      "ai-office-routing"
+    ],
+    "file_intake": {
+      "storage": "private",
+      "max_file_mb": 25,
+      "max_files_per_job": 5,
+      "max_active_jobs_per_account": 3,
+      "beta_daily_job_limit": 20
+    }
+  },
+  "scoped_services": [
     "code review and debugging",
     "data cleanup and structured transformation",
     "JSON normalization and extraction",
+    "document review and structured summaries",
     "research and analysis",
     "SEO/AEO/agent discovery review",
     "micro automation",
@@ -14,6 +34,12 @@
     "MCP integration",
     "x402 deterministic utilities",
     "QA and repair workflows"
+  ],
+  "pending_public_runtime": [
+    "image editing",
+    "video processing",
+    "audio processing",
+    "OCR / vision"
   ],
   "machine_interfaces": {
     "catalog": "https://x402.nexusword.it/catalog",
@@ -25,7 +51,8 @@
     "fake_metrics": false,
     "hidden_prompt_extraction": false,
     "private_key_requests": false,
-    "automatic_new_spend_eur": 0
+    "automatic_new_spend_eur": 0,
+    "unverified_completion_claims": false
   },
   "commerce": {
     "shop": "https://lab.nexusword.it/shop.html",
