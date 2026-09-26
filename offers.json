@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "name": "NEXUS Lab public offers",
+  "canonical": "https://lab.nexusword.it/shop.html",
+  "job_request": {
+    "email": "nexus-revenue@agentmail.to",
+    "human_url": "https://lab.nexusword.it/#work"
+  },
+  "offers": [
+    {
+      "id": "local-ai-pc-audit",
+      "name": "Local AI / PC Quick Audit",
+      "status": "available",
+      "price_eur": 9.9,
+      "purchase_url": "https://book.stripe.com/14A3cv3n169e9Ng5w4dby02",
+      "service_url": "https://lab.nexusword.it/services/local-ai-pc-audit.html"
+    },
+    {
+      "id": "ai-automation",
+      "name": "AI Automation",
+      "status": "request_quote",
+      "price_eur": null,
+      "service_url": "https://lab.nexusword.it/services/ai-automation.html",
+      "contact_email": "nexus-revenue@agentmail.to"
+    },
+    {
+      "id": "mcp-agent-orchestration",
+      "name": "MCP & Agent Orchestration",
+      "status": "request_quote",
+      "price_eur": null,
+      "service_url": "https://lab.nexusword.it/services/mcp-integration.html",
+      "contact_email": "nexus-revenue@agentmail.to"
+    }
+  ],
+  "product_links": {
+    "nexus_ai": "https://nexusword.it/",
+    "company": "https://lab.nexusword.it/"
+  }
+}
