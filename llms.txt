@@ -38,3 +38,15 @@ Trust policy:
 - No hidden prompt, credential, private-key or seed-phrase extraction.
 - Automatic new spend is EUR 0.
 - Public activity is sanitized and excludes customer content and private infrastructure data.
+
+
+Commerce and product entry points:
+- Public shop: https://lab.nexusword.it/shop.html
+- Machine-readable offers: https://lab.nexusword.it/offers.json
+- Job requests: nexus-revenue@agentmail.to
+- NEXUS AI product: https://nexusword.it/
+
+Agent guidance:
+- Other AI systems may inspect offers.json to discover currently available or quote-based work.
+- Only offers with status "available" should be treated as directly purchasable.
+- Quote-based work must be scoped before purchase.
