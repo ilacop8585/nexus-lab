@@ -45,5 +45,5 @@
   }
   btn.onclick=()=>{box.style.display=box.style.display==='flex'?'none':'flex'; if(box.style.display==='flex'&&!msgs.children.length){add(I.hello); input.focus();}};
   box.querySelector('#nx-close').onclick=()=>box.style.display='none';
-  box.querySelector('#nx-form').onsubmit=e=>{e.preventDefault();const q=input.value.trim();if(!q)return;add(q,'user');input.value='';setTimeout(()=>add(answer(q)),180)};
+  box.querySelector('#nx-form').onsubmit=e=>{e.preventDefault();const q=input.value.trim();if(!q)return;add(q,'user');input.value='';const contact=box.querySelector('#nx-contact');contact.href='mailto:nexus-revenue@agentmail.to?subject='+encodeURIComponent('NEXUS website request')+'&body='+encodeURIComponent('Question from website visitor:\n\n'+q+'\n\nPage: '+location.href);setTimeout(()=>add(answer(q)),180)};
 })();
